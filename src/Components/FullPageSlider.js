@@ -21,7 +21,8 @@ const Slide1 = ({ isActive }) => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: `url(${background1})`,
+          // backgroundImage: `url(${background1})`,
+          backgroundColor:"white"
           
         }}
       />
@@ -57,7 +58,8 @@ const Slide2 = ({ isActive }) => (
     <div
       className="absolute inset-0 bg-cover bg-center bg-opacity-50"
       style={{
-        backgroundImage: `url(${img1})`,
+        // backgroundImage: `url(${img1})`,
+        backgroundColor:"white"
       }}
     />
     {/* Content */}

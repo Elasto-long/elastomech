@@ -63,6 +63,33 @@ const Footer = () => {
             ))}
           </ul>
         </div>
+        <div className="flex flex-col mb-8 md:mb-0">
+          <div className="font-bold text-lg md:text-xl lg:text-2xl mb-4">FAQ's</div>
+          <ul className="flex flex-col gap-1 w-full cursor-pointer">
+            {[
+              { name: "Dock Fenders", path: "/faq/dock-fenders" },
+              { name: "Dock Bumpers", path: "/faq/dock-bumpers" },
+              { name: "Wheel Chockers", path: "/faq/wheel-chokers" },
+              { name: "Speed Breakers", path: "/faq/speed-breakers" },
+              { name: "Hose Ramps", path: "/faq/hose-ramps" },
+              { name: "Cable Protectors", path: "/faq/cable-protectors" },
+              { name: "Rubber Buffers/Stoppers", path: "/faq/rubber-stoppers" },
+              { name: "Tipper-Pads", path: "/faq/tipper-pads" },
+              { name: "Wall/Corner Guards", path: "/faq/corner-guards" },
+              { name: "Custom Products", path: "/custom-product" },
+            ].map((item, index) => (
+              <li key={index} className="flex gap-2 items-center text-white transition-all duration-300 text-[14px] md:text-[16px] hover:text-[#ffd930]">
+                <KeyboardArrowRightIcon />
+                <Link
+                  to={item.path}
+                  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                >
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
 
         {/* Contact Us Section */}
         <div className="flex flex-col">

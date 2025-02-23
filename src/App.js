@@ -8,6 +8,14 @@ import CustomProduct from './pages/CustomProduct';
 import NotFoundPage from './pages/NotFoundPage';
 import { HelmetProvider } from 'react-helmet-async';
 import FAQDB from './pages/FAQDB';
+import FAQCP from './pages/FAQCP';
+import FAQDF from './pages/FAQDF';
+import FAQHR from './pages/FAQHR';
+import FAQRS from './pages/FAQRS';
+import FAQSB from './pages/FAQSB';
+import FAQTP from './pages/FAQTP';
+import FAQWC from './pages/FAQWC';
+import FAQCG from './pages/FAQCG';
 
 const App = () => {
   return (
@@ -20,6 +28,14 @@ const App = () => {
           <Route path="/products" element={<Product />} />
           <Route path="/custom-product" element={<CustomProduct />} />
           <Route path="/faq/dock-bumpers" element={<FAQDB />} />
+          <Route path="/faq/cable-protectors" element={<FAQCP />} />
+          <Route path="/faq/dock-fenders" element={<FAQDF />} />
+          <Route path="/faq/hose-ramps" element={<FAQHR/>} />
+          <Route path="/faq/rubber-stoppers" element={<FAQRS />} />
+          <Route path="/faq/speed-breakers" element={<FAQSB />} />
+          <Route path="/faq/tipper-pads" element={<FAQTP />} />
+          <Route path="/faq/wheel-chokers" element={<FAQWC />} />
+          <Route path="/faq/corner-guards" element={<FAQCG />} />
           <Route path="/contact" element={<ContactPage />} />
           
           {/* Catch-All Route for Undefined Pages */}
