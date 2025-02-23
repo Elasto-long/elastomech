@@ -19,10 +19,10 @@ const Slide1 = ({ isActive }) => {
     >
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center bg-yellow-200"
         style={{
           // backgroundImage: `url(${background1})`,
-          backgroundColor:"white"
+          
           
         }}
       />
@@ -52,14 +52,14 @@ const Slide1 = ({ isActive }) => {
 
 const Slide2 = ({ isActive }) => (
   <div
-    className={`absolute inset-0 transition-opacity duration-1000 ${isActive ? "opacity-100" : "opacity-0"}`}
+    className={`absolute inset-0 transition-opacity duration-1000  ${isActive ? "opacity-100" : "opacity-0"}`}
   >
     {/* Background Image */}
     <div
-      className="absolute inset-0 bg-cover bg-center bg-opacity-50"
+      className="absolute inset-0 bg-cover bg-center bg-opacity-50  bg-yellow-300"
       style={{
         // backgroundImage: `url(${img1})`,
-        backgroundColor:"white"
+        // backgroundColor:"white"
       }}
     />
     {/* Content */}

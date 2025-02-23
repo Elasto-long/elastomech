@@ -1,5 +1,5 @@
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-import img1 from '../assets/aboutimages/image.webp'
+import img1 from '../assets/aboutimages/image.png'
 import { Link } from "react-router-dom";
 
 
@@ -10,11 +10,11 @@ const AboutSection = () => {
         {/* Image Section */}
         <div className="w-full lg:w-1/2 mb-10 lg:mb-0 ">
           <div className="flex justify-center">
-            {/* <img
+            <img
               src={img1}
               alt="About"
               className="rounded-none !shadow-none"
-            /> */}
+            />
           </div>
         </div>
 

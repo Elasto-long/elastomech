@@ -24,7 +24,7 @@ const NavBar = () => {
   <div className="container mx-auto flex justify-between items-center py-4 md:py-6 px-4">
     {/* Logo Section */}
     <div className="flex items-center">
-      <Link to="/" className="logo-area">
+      <Link to="/" className="logo-area" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
         <img
           className="normal-logo h-[50px] md:h-[70px]"
           src={clientLogo}
@@ -35,7 +35,7 @@ const NavBar = () => {
 
     {/* Navigation Menu (Desktop) */}
     <nav className="flex-1 hidden md:flex justify-center space-x-6 text-black font-medium">
-      <Link
+      <Link onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         to="/"
         className={`text-[17px] md:text-[19px] font-ubuntu ${
           isActive("/") ? "text-[#ffda31]" : "hover:text-gray-400"
@@ -43,7 +43,7 @@ const NavBar = () => {
       >
         Home
       </Link>
-      <Link
+      <Link onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         to="/about"
         className={`text-[17px] md:text-[19px] font-ubuntu ${
           isActive("/about") ? "text-[#ffda31]" : "hover:text-gray-400"
@@ -51,7 +51,7 @@ const NavBar = () => {
       >
         About
       </Link>
-      <Link
+      <Link onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         to="/products"
         className={`text-[17px] md:text-[19px] font-ubuntu ${
           isActive("/products") ? "text-[#ffda31]" : "hover:text-gray-400"
@@ -59,7 +59,7 @@ const NavBar = () => {
       >
         Products
       </Link>
-      <Link
+      <Link onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         to="/contact"
         className={`text-[17px] md:text-[19px] font-ubuntu ${
           isActive("/contact") ? "text-[#ffda31]" : "hover:text-gray-400"
@@ -72,7 +72,7 @@ const NavBar = () => {
     {/* Right Section (Desktop) */}
     <div className="flex items-center space-x-3">
       {/* Button */}
-      <Link to="/custom-product">
+      <Link to="/custom-product" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
         <div className="hidden md:block bg-[#ffda31] text-black font-semibold cursor-pointer px-6 py-2 text-[14px] shadow-none hover:bg-black rounded-none hover:text-white font-ubuntu">
           Custom Products
         </div>
@@ -114,7 +114,7 @@ const NavBar = () => {
         <div className="md:hidden fixed inset-0 bg-black bg-opacity-90 z-50 flex justify-center items-center">
           <div className="bg-black p-6 rounded-lg w-11/12">
             <nav className="flex flex-col space-y-4 text-center text-white font-ubuntu">
-              <Link
+              <Link 
                 to="/"
                 onClick={toggleMenu}
                 className={`text-[19px] ${
@@ -132,7 +132,7 @@ const NavBar = () => {
               >
                 About
               </Link>
-              <Link
+              <Link 
                 to="/products"
                 onClick={toggleMenu}
                 className={`text-[19px]  font-ubuntu${
