@@ -56,4 +56,41 @@
     <loc>https://elastomech.in/products/wheel-chokers</loc>
     <priority>1.0</priority>
   </url>
+    <url>
+    <loc>https://elastomech.in/faq/cable-protectors</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://elastomech.in/faq/corner-guards</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://elastomech.in/faq/dock-bumpers</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://elastomech.in/faq/dock-fenders</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://elastomech.in/faq/hose-ramps</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://elastomech.in/faq/rubber-stoppers</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://elastomech.in/faq/speed-breakers</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://elastomech.in/faq/tipper-pads</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://elastomech.in/faq/wheel-chokers</loc>
+    <priority>1.0</priority>
+  </url>
+
 </urlset>
