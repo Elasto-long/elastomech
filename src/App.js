@@ -16,10 +16,12 @@ import FAQSB from './pages/FAQSB';
 import FAQTP from './pages/FAQTP';
 import FAQWC from './pages/FAQWC';
 import FAQCG from './pages/FAQCG';
+import EmailPopup from './pages/EmailPopup';
 
 const App = () => {
   return (
     <HelmetProvider>
+      <EmailPopup/>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
