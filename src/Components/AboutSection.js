@@ -1,5 +1,5 @@
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-import img1 from '../assets/aboutimages/image.png'
+import img1 from '../assets/aboutimages/images.png'
 import { Link } from "react-router-dom";
 
 
