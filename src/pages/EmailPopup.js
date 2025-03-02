@@ -24,29 +24,38 @@ export default function EmailPopup() {
     }
   }, []);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    setIsLoading(true);
-    setMessageStatus("");
+const sendEmail = (e) => {
+  e.preventDefault();
+  setIsLoading(true);
+  setMessageStatus("");
 
-    emailjs
-      .sendForm("service_1fcb9ht", "template_mx2akvf", form.current, {
-        publicKey: "n-W_fjN0Gt5M1bmgY",
-      })
-      .then(
-        () => {
-          setIsLoading(false);
-          setMessageStatus("Thank you! You've been subscribed.");
-          form.current.reset();
-          localStorage.setItem("subscribed", "true"); // Save subscription status
-          setTimeout(() => setShowPopup(false), 1000); // Close after success
-        },
-        (error) => {
-          setIsLoading(false);
-          setMessageStatus(`Failed to send: ${error.text}`);
-        }
-      );
-  };
+  emailjs
+    .sendForm("service_1fcb9ht", "template_mx2akvf", form.current, {
+      publicKey: "n-W_fjN0Gt5M1bmgY",
+    })
+    .then(
+      () => {
+        setIsLoading(false);
+        setMessageStatus("Thank you! You've been subscribed.");
+        form.current.reset();
+        localStorage.setItem("subscribed", "true"); // Save subscription status
+        setTimeout(() => {
+          setShowPopup(false);
+          document.body.style.overflow = "auto"; // ✅ Restore scrolling after closing
+        }, 1000);
+      },
+      (error) => {
+        setIsLoading(false);
+        setMessageStatus(`Failed to send: ${error.text}`);
+      }
+    );
+};
+
+const closePopup = () => {
+  setShowPopup(false);
+  document.body.style.overflow = "auto"; // ✅ Restore scrolling when manually closed
+};
+
 
   const closePopup = () => {
     setShowPopup(false);
