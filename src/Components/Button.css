@@ -1,0 +1,38 @@
+/* Button.css */
+
+/* Container for positioning the button */
+.button-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000; /* Ensure it's always on top */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Button Styling */
+.calendly-button {
+  background-color: #ffda31;
+  color: black;
+  padding: 12px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.calendly-button:hover {
+  background-color: #e0c229; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .calendly-button {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}
