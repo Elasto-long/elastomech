@@ -17,11 +17,12 @@ import FAQTP from './pages/FAQTP';
 import FAQWC from './pages/FAQWC';
 import FAQCG from './pages/FAQCG';
 import EmailPopup from './pages/EmailPopup';
+import CalendlyButton from './Components/CalendlyButton'; // Import the CalendlyButton component
 
 const App = () => {
   return (
     <HelmetProvider>
-      <EmailPopup/>
+      <EmailPopup />
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -32,7 +33,7 @@ const App = () => {
           <Route path="/faq/dock-bumpers" element={<FAQDB />} />
           <Route path="/faq/cable-protectors" element={<FAQCP />} />
           <Route path="/faq/dock-fenders" element={<FAQDF />} />
-          <Route path="/faq/hose-ramps" element={<FAQHR/>} />
+          <Route path="/faq/hose-ramps" element={<FAQHR />} />
           <Route path="/faq/rubber-stoppers" element={<FAQRS />} />
           <Route path="/faq/speed-breakers" element={<FAQSB />} />
           <Route path="/faq/tipper-pads" element={<FAQTP />} />
@@ -43,6 +44,8 @@ const App = () => {
           {/* Catch-All Route for Undefined Pages */}
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
+        {/* The CalendlyButton will appear across all pages */}
+        <CalendlyButton />
       </Router>
     </HelmetProvider>
   );
