@@ -51,9 +51,6 @@ export default function EmailPopup() {
       );
   };
   
-  
-  
-
   const closePopup = () => {
     setShowPopup(false);
     document.body.style.overflow = "auto"; // Restore scrolling
@@ -85,12 +82,13 @@ export default function EmailPopup() {
             </Button>
           </form>
 
-          // <button
-          //   onClick={closePopup}
-          //   className="absolute top-2 right-2 text-gray-500 hover:text-black text-xl"
-          // >
-          //   ✖
-          // </button>
+          {/* Uncomment the below code if you want the close button */}
+          {/* <button
+            onClick={closePopup}
+            className="absolute top-2 right-2 text-gray-500 hover:text-black text-xl"
+          >
+            ✖
+          </button> */}
         </div>
       </div>
     )
